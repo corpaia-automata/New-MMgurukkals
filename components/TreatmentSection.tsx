@@ -32,6 +32,7 @@ export default function TreatmentsSection() {
 
           <button className="flex items-center gap-2 px-4 py-2 border rounded-full hover:bg-gray-200 transition self-start md:self-center">
             <span className="font-medium">All treatments</span>
+            
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>

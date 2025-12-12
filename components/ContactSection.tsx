@@ -8,12 +8,12 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full overflow-x-hidden">
 
         {/* TOP SECTION - HEADING & DESCRIPTION (CENTERED) */}
-        <div className="text-center mb-10 md:mb-12">
+        <div className="text-left md:text-center mb-10 md:mb-12">
           <h4 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight font-fractul">
             Get in <span className="text-orange-500">Touch</span>
           </h4>
 
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-2xl md:mx-auto">
             Share your details and our team will reach out to guide you with the
             right Ayurvedic treatment based on your concerns.
           </p>

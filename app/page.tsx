@@ -23,6 +23,7 @@ import FAQSection from "@/components/FaqSection"
 import AboutSection from "@/components/AboutSection"
 import BlogSection from "@/components/BlogSection"
 import { StatsSection } from "@/components/StatsSection"
+import { WhatMakesUsDifferent } from "@/components/WhatMakesUsDifferent"
 
 export default function Home() {
   return (
@@ -38,10 +39,11 @@ export default function Home() {
       />
       <StatsSection />
       <AboutSection />
+      <WhatMakesUsDifferent />
       <ServicesSection />
-      <TreatmentsSection />
+      {/* <TreatmentsSection /> */}
       <WhyChooseUs />
-      <FounderSection />
+      {/* <FounderSection /> */}
       <BlogSection />
       <FAQSection />
       <ContactSection />

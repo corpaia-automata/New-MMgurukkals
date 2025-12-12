@@ -1,8 +1,8 @@
 export function StatsSection() {
   const stats = [
-    { value: "100", symbol: "%", description: ["Natural", "Products"] },
+    { value: "100", symbol: "%", description: ["Natural"] },
     { value: "4000", symbol: "+", description: ["Happy", "Customers"] },
-    { value: "7", symbol: "+", description: ["Years of", "Experience"] },
+    { value: "25", symbol: "+", description: ["Years of", "Experience"] },
   ]
 
   return (

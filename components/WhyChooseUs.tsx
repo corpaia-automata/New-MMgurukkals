@@ -32,7 +32,7 @@ const tiles: Tile[] = [
   },
   {
     id: 5,
-    title: "10+ Years of",
+    title: "25+ Years of",
     subtitle: "Experience",
     highlight: true,
   },
@@ -45,10 +45,11 @@ export default function WhyChooseUs() {
 
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-left md:text-center mb-16">
           <h4 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight font-fractul">
             Why Choose <span className="text-orange-500">MMgurukkals</span>
           </h4>
+          
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Decades of traditional Kalari Marma healing, refined with modern Ayurvedic science to help you recover naturally, safely, and effectively.
           </p>
