@@ -7,7 +7,7 @@ import { Leaf } from "lucide-react";
 export default function CTASection() {
   return (
     <section className="py-12 md:py-16 bg-white">
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-orange-500 rounded-2xl overflow-hidden shadow-2xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-8 md:p-12 items-center">
             {/* Left Side - Text Content (2/3 width) */}

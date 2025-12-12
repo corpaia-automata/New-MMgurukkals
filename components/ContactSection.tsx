@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ContactSection() {
   return (
     <section className="py-12 md:py-16 bg-white overflow-x-hidden">
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 w-full overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full overflow-x-hidden">
 
         {/* TOP SECTION - HEADING & DESCRIPTION (CENTERED) */}
         <div className="text-center mb-10 md:mb-12">

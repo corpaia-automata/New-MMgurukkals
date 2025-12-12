@@ -41,7 +41,7 @@ const tiles: Tile[] = [
 export default function WhyChooseUs() {
   return (
     <section className="py-20 md:py-28 bg-gradient-to-b from-gray-50 to-white">
-      <div className="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
 
         {/* Heading */}

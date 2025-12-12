@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function FounderSection() {
   return (
     <section className="w-full py-12 md:py-16 px-4 sm:px-6 lg:px-8 rounded-xl">
-      <div className="mx-auto max-w-[90rem] grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch rounded-xl">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch rounded-xl">
 
         {/* LEFT — IMAGE */}
         <div className="relative w-full h-[500px] sm:h-[400px] md:h-full md:min-h-[400px] overflow-hidden rounded-xl">

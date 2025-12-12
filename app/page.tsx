@@ -21,6 +21,8 @@ import ServicesSection from "@/components/ServicesSection"
 import TreatmentsSection from "@/components/TreatmentSection"
 import FAQSection from "@/components/FaqSection"
 import AboutSection from "@/components/AboutSection"
+import BlogSection from "@/components/BlogSection"
+import { StatsSection } from "@/components/StatsSection"
 
 export default function Home() {
   return (
@@ -29,20 +31,21 @@ export default function Home() {
 
       {/* Hero Section */}
       <HeroSection
-        title="Instant Relief From Pain"
+        title="Complete Pain Relief with Kalarimarma Ayurveda Treatment"
         subtitle="Welcome to MMGurukkals"
-        description="Authentic Ayurvedic treatments for holistic wellness and natural pain relief"
-        image="/ayurvedic-clinic-serene-wellness.jpg"
-        cta={{ text: "Book a Consultation", href: "/contact" }}
+        description="Experience deep healing as Kalarimarma Ayurveda targets vital energy points to relieve pain, restore balance, and strengthen your body."
+        image="/home.png"
       />
-      <AboutSection/>
-      <ServicesSection/>
-      <TreatmentsSection/>
-      <WhyChooseUs/>
-      <FounderSection/>
-      <FAQSection/>
-      <ContactSection/>
-      <CTASection/>
+      <StatsSection />
+      <AboutSection />
+      <ServicesSection />
+      <TreatmentsSection />
+      <WhyChooseUs />
+      <FounderSection />
+      <BlogSection />
+      <FAQSection />
+      <ContactSection />
+      <CTASection />
 
       <Footer />
     </>

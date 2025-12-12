@@ -18,6 +18,7 @@ export default function DoctorsPage() {
         title="Our Practitioners"
         subtitle="Meet The Team"
         description="Experienced and certified Ayurvedic physicians dedicated to your wellness"
+        useGradient={true}
       />
 
       {/* Doctors Grid */}

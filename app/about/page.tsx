@@ -5,6 +5,8 @@ import { SectionHeader } from "@/components/section-header"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { testimonials } from "@/data/testimonials"
 import Image from "next/image"
+import FounderSection from "@/components/FounderSection"
+import CTASection from "@/components/CTASection"
 
 export const metadata = {
   title: "About MMGurukkals | Ayurvedic Clinic",
@@ -20,37 +22,59 @@ export default function AboutPage() {
         title="About MMGurukkals"
         subtitle="Our Story"
         description="Dedicated to bringing authentic Ayurvedic wisdom to modern healthcare"
+        useGradient={true}
       />
 
       {/* Our Story */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-96">
-              <Image src="/ayurvedic-traditional-healing-practice.jpg" alt="Our Story" fill className="object-cover rounded-lg" />
-            </div>
-            <div>
-              <SectionHeader subtitle="Founded in 2004" title="Our Journey" centered={false} />
-              <p className="text-foreground/70 mt-6 leading-relaxed mb-4">
-                MMGurukkals was established by a group of passionate Ayurvedic practitioners with a vision to make
-                authentic traditional medicine accessible to the modern world. What began as a small clinic has grown
-                into a renowned wellness center trusted by thousands.
-              </p>
-              <p className="text-foreground/70 leading-relaxed mb-4">
-                Our commitment to excellence, combined with our deep respect for Ayurvedic principles, has made us a
-                beacon of natural healing in the community. We continue to train new practitioners and expand our
-                services to serve more people.
-              </p>
-              <p className="text-foreground/70 leading-relaxed">
-                Today, MMGurukkals stands as a testament to the power of ancient wisdom meeting modern wellness needs.
-              </p>
+          <div className=" p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+              {/* Text Column */}
+              <div className="flex flex-col">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-orange-500 mb-3">
+                  Our Story
+                </h2>
+                <div className="w-16 h-1 bg-green-400 mb-6"></div>
+                <p className="text-black text-justify leading-relaxed mb-4">
+                  Rooted in the timeless wisdom of Ayurveda, Gurikkal Ayurveda Clinic carries forward a legacy of
+                  healing that blends tradition with compassion. Founded with a vision to preserve and promote authentic
+                  Ayurvedic practices, our clinic stands as a sanctuary for those seeking natural balance and holistic
+                  wellness.
+                </p>
+                <p className="text-black text-justify leading-relaxed mb-4">
+                  At Gurikkal, every treatment is more than a therapy it's a journey of renewal. From specialized
+                  Prasava Raksha care for mothers to full-body rejuvenation therapies, each service is thoughtfully
+                  designed to nurture body, mind, and soul.
+                </p>
+                <p className="text-black text-justify leading-relaxed">
+                  Guided by experienced Ayurvedic practitioners and supported by pure herbal formulations, we remain
+                  devoted to restoring health the natural way where every healing touch tells a story of care, purity,
+                  and tradition. Our mission is to make ancient Ayurvedic healing accessible for modern lifestyles,
+                  offering comfort and wellness for every stage of life. At Gurikkal Ayurveda Clinic, we believe true
+                  healing begins with harmony within yourself and with nature.
+                </p>
+              </div>
+
+              {/* Image Column */}
+              <div className="relative w-full h-[400px] md:h-[600px] rounded-tr-2xl rounded-bl-2xl overflow-hidden order-first md:order-last">
+                <Image
+                  src="/mm-minimal.png"
+                  alt="Ayurvedic herbs and traditional healing tools"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <FounderSection />
+
       {/* Core Values */}
-      <section className="py-16 md:py-24 bg-muted/30">
+      <section className="py-16 md:py-24 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader
             subtitle="Our Foundation"
@@ -98,17 +122,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader subtitle="Success Stories" title="Transformations Through Ayurveda" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} {...testimonial} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <CTASection />
 
       <Footer />
     </>

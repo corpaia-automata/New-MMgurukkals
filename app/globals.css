@@ -79,6 +79,7 @@
   --font-sans: "Inter", sans-serif;
   --font-serif: "Playfair Display", serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --font-fractul: "Fractul", sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -121,8 +122,15 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-fractul {
+    font-family: var(--font-fractul);
   }
 }
 
@@ -135,4 +143,13 @@
 @font-face {
   font-family: "Inter";
   src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+}
+
+/* Fractul Regular Font */
+@font-face {
+  font-family: "Fractul";
+  src: url("/fonts/fractul/fonnts.com-fractul-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
