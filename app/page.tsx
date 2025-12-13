@@ -35,7 +35,7 @@ export default function Home() {
         title="Complete Pain Relief with Kalarimarma Ayurveda Treatment"
         subtitle="Welcome to MMGurukkals"
         description="Experience deep healing as Kalarimarma Ayurveda targets vital energy points to relieve pain, restore balance, and strengthen your body."
-        image="/home.png"
+        image="/home.webp"
       />
       <StatsSection />
       <AboutSection />

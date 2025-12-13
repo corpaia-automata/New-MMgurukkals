@@ -38,7 +38,7 @@ export function WhatMakesUsDifferent() {
     <section className="py-20 md:py-32 bg-gradient-to-b from-white via-green-50/30 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-left md:text-center mb-16">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 font-fractul">
             What Makes Us <span className="text-green-600">Different</span>
           </h2>

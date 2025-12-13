@@ -12,9 +12,9 @@ interface HeroSectionProps {
 
 export function HeroSection({ title, subtitle, description, image, useGradient = false, cta }: HeroSectionProps) {
   // Use gradient for non-home pages, or home.png for home page
-  const backgroundImage = useGradient ? undefined : (image || "/home.png")
+  const backgroundImage = useGradient ? undefined : (image || "/home.webp")
   // Show dual buttons if image is home.png (home page), otherwise show single CTA
-  const showDualButtons = !useGradient && (!image || image === "/home.png")
+  const showDualButtons = !useGradient && (!image || image === "/home.webp")
 
   return (
     <section

@@ -16,7 +16,7 @@ const services = [
     subtitle: "Postnatal Care & Recovery",
     description:
       "Ayurvedic postnatal care for mothers and babies to regain strength, balance hormones, and support natural recovery.",
-    image: "/prasva.png",
+    image: "/prasava.webp",
   },
   {
     title: "Premium Ayurvedic Massage",
@@ -88,7 +88,7 @@ export default function ServicesSection() {
       {/* Section Header */}
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16">
         <div
-          className={`text-left md:text-center transition-all duration-600 ease-out ${isVisible
+          className={`text-center transition-all duration-600 ease-out ${isVisible
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-5"
             }`}
@@ -96,7 +96,7 @@ export default function ServicesSection() {
           <h4 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight font-fractul">
             Our <span className="text-orange-500">Services</span>
           </h4>
-          <p className="text-lg md:text-xl text-gray-600 max-w-6xl md:mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-6xl mx-auto leading-relaxed">
             At MM Gurukkals Ayurveda Hospital, we blend ancient Ayurvedic wisdom
             with modern healing science to restore balance, strength, and peace.
             Our authentic treatments naturally relieve pain, rejuvenate the body,

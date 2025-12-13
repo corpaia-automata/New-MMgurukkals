@@ -10,21 +10,21 @@ const blogs = [
     slug: "prasava-raksha",
     excerpt:
       "Ayurvedic postnatal care for mothers and babies to regain strength, balance hormones, and support natural recovery.",
-    image: "/prasavaBlog.png",
+    image: "/prasavaBlog.webp",
   },
   {
     title: "A Powerful Reset for Body & Mind",
     slug: "premium-ayurvedic-massage",
     excerpt:
       "Rejuvenating full-body massage using herbal oils to relax the mind, detox the body, and refresh your energy.",
-    image: "/kalari-marma.png",
+    image: "/kalari-marma.webp",
   },
   {
     title: "Premium Ayurvedic Massage With Kalari Marma Chikitsa",
     slug: "premium-ayurvedic-massage-with-kalari-marma-chikitsa",
     excerpt:
       "Deep healing therapy combining Premium Ayurvedic Massage with Kalari Marma Chikitsa for pain, stress, and stiffness relief.",
-    image: "/premiumBlog.png",
+    image: "/premiumBlog.webp",
   },
 ];
 

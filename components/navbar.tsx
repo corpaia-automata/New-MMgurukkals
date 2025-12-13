@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const isHomePage = pathname === "/"
 
@@ -81,11 +82,39 @@ export function Navbar() {
           {/* Mobile Toggle */}
           <button
             className={`md:hidden ${textColorClass}`}
-            onClick={() => setIsScrolled((prev) => prev)} // dummy to avoid ESLint
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle mobile menu"
           >
-            <Menu size={24} />
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-200 bg-white">
+            <div className="px-4 pt-2 pb-4 space-y-2">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block py-2 text-gray-900 hover:text-primary transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Link
+                href="/contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block"
+              >
+                <Button className="w-full bg-primary text-white hover:bg-primary/90 mt-2">
+                  Book Now
+                </Button>
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   )
