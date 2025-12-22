@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const services = [
@@ -10,6 +11,7 @@ const services = [
     description:
       "Traditional Kalari-based therapy that relieves pain, heals injuries, and restores body strength through precise Marma point treatment.",
     image: "/kalari.webp",
+    url: "/services", // Update this when you create a dedicated Kalari page
   },
   {
     title: "Prasava Raksha",
@@ -17,13 +19,15 @@ const services = [
     description:
       "Ayurvedic postnatal care for mothers and babies to regain strength, balance hormones, and support natural recovery.",
     image: "/prasava.webp",
+    url: "/postnatal-care",
   },
   {
-    title: "Premium Ayurvedic Massage",
+    title: "Premium Kalari Marma Ayurvedic Massage",
     subtitle: "Rejuvenation & Wellness",
     description:
       "Rejuvenating full-body massage using herbal oils to relax the mind, detox the body, and refresh your energy.",
     image: "/premium.webp",
+    url: "/services", // Update this when you create a dedicated Premium Massage page
   },
 ];
 
@@ -32,7 +36,7 @@ export default function ServicesSection() {
   const [cardVisible, setCardVisible] = useState<boolean[]>([]);
   const [imagesLoaded, setImagesLoaded] = useState<boolean[]>([]);
   const sectionRef = useRef<HTMLElement>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const cardRefs = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -108,12 +112,13 @@ export default function ServicesSection() {
       {/* Full-Width Three Column Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
         {services.map((service, index) => (
-          <div
+          <Link
             key={index}
+            href={service.url}
             ref={(el) => {
               cardRefs.current[index] = el;
             }}
-            className={`group relative h-[600px] md:h-[700px] overflow-hidden ${cardVisible[index]
+            className={`group relative h-[600px] md:h-[700px] overflow-hidden block cursor-pointer ${cardVisible[index]
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8"
               }`}
@@ -172,7 +177,7 @@ export default function ServicesSection() {
                 {service.description}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

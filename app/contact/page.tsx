@@ -126,7 +126,7 @@ export default function ContactPage() {
                     href="tel:+917306393768"
                     className="text-gray-900 hover:text-orange-500 transition-colors text-base"
                   >
-                    +91 73063 93768
+                    +91 7012525067, 7356493768
                   </a>
                 </div>
               </div>

@@ -12,8 +12,8 @@ type Tile = {
 const tiles: Tile[] = [
   {
     id: 1,
-    title: "Rooted & Personalised",
-    subtitle: "Treatment Plans",
+    title: "Kalari Marma Chikilsa",
+    subtitle: "Approach",
   },
   {
     id: 2,
@@ -22,8 +22,8 @@ const tiles: Tile[] = [
   },
   {
     id: 3,
-    title: "Authentic Kalari Marma",
-    subtitle: "Expertise",
+    title: "Rooted & Personalised",
+    subtitle: "Treatment Plans",
   },
   {
     id: 4,

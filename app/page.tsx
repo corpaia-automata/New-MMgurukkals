@@ -41,7 +41,7 @@ export default function Home() {
       <AboutSection />
       <WhatMakesUsDifferent />
       <ServicesSection />
-      {/* <TreatmentsSection /> */}
+      <TreatmentsSection />
       <WhyChooseUs />
       {/* <FounderSection /> */}
       <BlogSection />

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 import CTASection from "@/components/CTASection"
+import { Leaf, Phone, MessageCircle } from "lucide-react"
 
 export const metadata = {
   title: "Services | MMGurukkals Ayurvedic Clinic",
@@ -25,7 +26,7 @@ const services = [
     image: "/prasva.png",
   },
   {
-    title: "Premium Ayurvedic Massage",
+    title: "Premium Ayurvedic Kalari Marma Massage",
     description:
       "This premium Ayurvedic massage uses warm, medicated herbal oils and rhythmic therapeutic strokes to deeply relax the body and mind. It improves circulation, detoxifies tissues, nourishes the skin, and releases physical and mental fatigue. The treatment brings harmony, rejuvenation, and a renewed sense of vitality to your entire system.",
     image: "/premium.webp",
@@ -44,7 +45,7 @@ export default function ServicesPage() {
         useGradient={true}
       />
 
-      <section className="py-6 md:py-10 bg-white">
+      <section className="py-6 md:py-10 bg-[#faf8f5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {services.map((service, index) => {
             const isEven = index % 2 === 0
@@ -53,11 +54,10 @@ export default function ServicesPage() {
             return (
               <div
                 key={index}
-                className={`flex flex-col ${isImageLeft ? "md:flex-row" : "md:flex-row-reverse"
-                  } gap-8 md:gap-12 items-center mb-16 md:mb-24 last:mb-0`}
+                className={`relative flex flex-col ${isImageLeft ? "md:flex-row" : "md:flex-row-reverse"} gap-8 md:gap-12 items-center mb-16 md:mb-24 last:mb-0`}
               >
                 {/* Image Section */}
-                <div className="w-full md:w-1/2 relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
+                <div className="w-full md:w-1/2 relative h-[400px] md:h-[550px] rounded-xl overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -65,21 +65,66 @@ export default function ServicesPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
+                  {/* Overlay Box - Bottom Right */}
+                  <div className="absolute bottom-4 right-4 bg-[#8b6f47]/90 backdrop-blur-sm rounded-lg px-4 py-2">
+                    <p className="text-white text-sm md:text-base font-medium">Duration: 21-28 Days</p>
+                  </div>
                 </div>
 
                 {/* Text Section */}
-                <div className="w-full md:w-1/2 flex flex-col justify-center">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight font-fractul">
+                <div className={`w-full md:w-1/2 flex flex-col justify-center relative ${isImageLeft ? "pr-0 md:pr-16" : "pl-0 md:pl-16"}`}>
+                  {/* Small Icon */}
+                  <div className="mb-3">
+                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                      <Leaf className="w-5 h-5" />
+                    </div>
+                  </div>
+
+                  {/* Uppercase Header */}
+                  <p className="text-primary uppercase text-xs md:text-sm font-semibold tracking-wider mb-2">
+                    AYURVEDIC TREATMENT
+                  </p>
+
+                  {/* Large Title */}
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#5c3e1f] mb-4 md:mb-6 leading-tight font-serif">
                     {service.title}
                   </h2>
-                  <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+
+                  {/* Description */}
+                  <p className="text-base md:text-lg text-[#5c3e1f] leading-relaxed mb-6">
                     {service.description}
                   </p>
+
+                  {/* View Details Button */}
                   <Link href="/contact">
-                    <Button size="lg" className="bg-primary hover:bg-primary/90 px-6 py-4 text-lg text-primary-foreground">
-                      Learn More
+                    <Button
+                      size="lg"
+                      className="bg-primary hover:bg-primary/90 px-6 py-4 text-lg text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 w-fit"
+                    >
+                      <Leaf className="w-4 h-4 mr-2" />
+                      View Details
                     </Button>
                   </Link>
+
+                  {/* Floating Action Buttons - Positioned on the outer edge */}
+                  <div className={`absolute ${isImageLeft ? "right-0" : "left-0"} top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-3`}>
+                    <Link
+                      href="tel:+917012525067"
+                      className="w-12 h-12 bg-primary hover:bg-primary/90 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all duration-200"
+                      aria-label="Call us"
+                    >
+                      <Phone className="w-5 h-5" />
+                    </Link>
+                    <Link
+                      href="https://wa.me/917306393768"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-primary hover:bg-primary/90 rounded-lg flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all duration-200"
+                      aria-label="WhatsApp us"
+                    >
+                      <MessageCircle className="w-5 h-5" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             )

@@ -22,7 +22,7 @@ export function Footer() {
           {/* Social Media Icons */}
           <div className="flex items-center gap-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61583995856838"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
@@ -31,7 +31,7 @@ export function Footer() {
               <Facebook size={24} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/mm_gurukkals?igsh=OThqdzVkZW83a3A1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
@@ -40,7 +40,7 @@ export function Footer() {
               <Instagram size={24} />
             </a>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@mm_gurukkal"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
@@ -68,8 +68,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/doctors" className="hover:text-white transition-colors">
-                  Our Team
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  blogs
                 </Link>
               </li>
               <li>
@@ -87,7 +87,7 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-white" />
                 <a href="tel:+91 73063 93768" className="hover:text-white transition-colors">
-                  +91 73063 93768
+                  +91 7012525067
                 </a>
               </li>
               <li className="flex items-center gap-2">
