@@ -23,7 +23,7 @@ const services = [
     title: "Prasava Raksha",
     description:
       "Prasava Raksha is a complete Ayurvedic postnatal care system designed to restore a mother's strength after childbirth. It promotes hormonal balance, supports emotional well-being, and accelerates recovery through warm oil treatments, abdominal care, and rejuvenating herbal support. This therapy helps rebuild energy, reduce stress, and nurture both mother and newborn.",
-    image: "/prasva.png",
+    image: "/prasava.webp",
   },
   {
     title: "Premium Ayurvedic Kalari Marma Massage",
@@ -65,10 +65,6 @@ export default function ServicesPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  {/* Overlay Box - Bottom Right */}
-                  <div className="absolute bottom-4 right-4 bg-[#8b6f47]/90 backdrop-blur-sm rounded-lg px-4 py-2">
-                    <p className="text-white text-sm md:text-base font-medium">Duration: 21-28 Days</p>
-                  </div>
                 </div>
 
                 {/* Text Section */}
