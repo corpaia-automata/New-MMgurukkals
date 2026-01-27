@@ -53,7 +53,7 @@ export default function FAQ() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight font-fractul mb-4">
-            Customers' Major Concerns and Common Questions
+            Frequently Asked Question
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Find answers to frequently asked questions about our Prasavaraksha postnatal care program.

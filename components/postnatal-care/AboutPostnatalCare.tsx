@@ -8,7 +8,7 @@ export default function AboutPostnatalCare() {
             <span className="text-orange-500">MM Gurukkals</span>
           </h2>
           
-          <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-justify text-lg md:text-lg text-gray-700 leading-relaxed">
             <p>
               Prasavaraksha, meaning "protection after delivery," is a traditional Ayurvedic approach to postnatal care that has been practiced for centuries. This comprehensive system recognizes that the postnatal period is a critical time when a mother's body undergoes significant changes and requires specialized care to restore balance, strength, and vitality.
             </p>

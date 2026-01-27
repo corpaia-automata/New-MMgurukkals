@@ -1,61 +1,106 @@
-"use client";
+import Image from "next/image";
 
-interface PackageFeature {
-  title: string;
-  description: string;
-  icon: string;
-}
+const motherTreatments = [
+  "Yoga",
+  "Abhyangam (Oil Massage)",
+  "Vethu Kuli (Medicated Snanam)",
+  "Abdominal Binding (Veshtanam)",
+  "Shiro Abhyangam (Head Oil Massage)",
+  "Anti Stretch Mark Treatments",
+  "Avagaham / Yoni Kshalanam (Medicated Sitz Bath)",
+  "Kashayadhara",
+  "Medicated dhoopanam (For wound healing)",
+  "Kesha dhoopam (For hair health)",
+  "Kizhi treatment (If needed)",
+  "Foot massage",
+  "Face massage",
+  "Anti-tan (Hyper pigmentation) treatment",
+  "Herbal kajal",
+  "Needed medicines",
+  "Diet food for mother as per doctor’s advice (Buffet / Room Service)",
+  "Laundry services for patient and one bystander",
+];
 
-const packageFeatures: PackageFeature[] = [
-  {
-    title: "Customized Care Plans",
-    description:
-      "Every mother's postnatal journey is unique. Our experienced practitioners create personalized care plans tailored to individual needs, recovery patterns, and specific requirements, ensuring the most appropriate support for each mother and baby.",
-    icon: "🎯",
-  },
-  {
-    title: "Doctor-Guided Treatment Approach",
-    description:
-      "All treatments are supervised and guided by our experienced Ayurvedic physicians. Regular consultations ensure that care evolves with your recovery progress, with professional oversight at every step of your healing journey.",
-    icon: "👩‍⚕️",
-  },
-  {
-    title: "Mother & Baby Integrated Care",
-    description:
-      "Our approach recognizes that the well-being of mother and baby are interconnected. We provide comprehensive support that nurtures both, creating a harmonious environment that supports bonding, recovery, and healthy development.",
-    icon: "🤱",
-  },
+const babyTreatments = [
+  "Oil massage",
+  "Medicated snana (Bath)",
+  "Medicines (If needed and Ura-marunnu)",
 ];
 
 export default function PackagesOverview() {
   return (
-    <section className="py-16 md:py-24 bg-[#faf8f5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight font-fractul mb-4">
-            Our Care <span className="text-orange-500">Approach</span>
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our postnatal care packages are designed with a comprehensive, integrated approach to support both mother and baby.
-          </p>
-        </div>
+    <section className="w-full bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-green-600 text-2xl font-semibold mb-10">
+          PACKAGE DETAILS
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {packageFeatures.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100"
-            >
-              <div className="text-5xl mb-4">{feature.icon}</div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-fractul">
-                {feature.title}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          
+          {/* LEFT – CONTENT */}
+          <div className="space-y-12">
+            {/* Mother */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                Included Treatment For Mother
               </h3>
-              <p className="text-gray-700 leading-relaxed">{feature.description}</p>
+              <ul className="space-y-3">
+                {motherTreatments.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 border-b border-gray-200 pb-2"
+                  >
+                    <span className="text-green-500 mt-1">✔</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
+
+            {/* Baby */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">
+                Included Treatment For Baby
+              </h3>
+              <ul className="space-y-3">
+                {babyTreatments.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-3 border-b border-gray-200 pb-2"
+                  >
+                    <span className="text-green-500 mt-1">✔</span>
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* RIGHT – IMAGES */}
+          <div className="relative flex flex-col items-center gap-20">
+            
+            {/* Mother Image */}
+            <div className="relative w-[400px] h-[500px] rounded-full overflow-hidden">
+              <Image
+                src="/facilities/mother.png"
+                alt="Mother care"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+            <div className="relative w-[400px] h-[450px] flex justify-start rounded-full overflow-hidden">
+              <Image
+                src="/facilities/baby.png"
+                alt="Baby care"
+                fill
+                className="object-cover"
+              />
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
   );
 }
-

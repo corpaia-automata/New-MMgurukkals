@@ -14,6 +14,9 @@ import VideoTestimonials from "@/components/postnatal-care/VideoTestimonials";
 import TeamSection from "@/components/postnatal-care/TeamSection";
 import GMBTestimonials from "@/components/postnatal-care/GMBTestimonials";
 import BlogPreview from "@/components/postnatal-care/BlogPreview";
+import OurFacilities from "@/components/postnatal-care/OurFacilities";
+import ServicesWithImage from "@/components/postnatal-care/ServicesWeOffer";
+import PackageDetails from "@/components/postnatal-care/PackageDetails";
 
 export const metadata = {
   title: "Postnatal Care (Prasavaraksha) | MMGurukkals Ayurvedic Clinic",
@@ -27,16 +30,19 @@ export default function PostnatalCarePage() {
       <Navbar />
       <HeroSection />
       <AboutPostnatalCare />
-      <BenefitsTable />
-      <RecoveryPhasePrograms />
+      <OurFacilities/>
+      {/* <BenefitsTable /> */}
+      {/* <RecoveryPhasePrograms /> */}
       <PackagesOverview />
+      <ServicesWithImage/>
+      <PackageDetails/>
       <WhyChooseUs />
-      <ConsultationCTA />
-      <OverallBenefits />
-      <Certifications />
+      {/* <ConsultationCTA /> */}
+      {/* <OverallBenefits /> */}
+      {/* <Certifications /> */}
       <FAQ />
-      <VideoTestimonials />
-      <TeamSection />
+      {/* <VideoTestimonials /> */}
+      {/* <TeamSection /> */}
       <GMBTestimonials />
       <BlogPreview />
       <Footer />
