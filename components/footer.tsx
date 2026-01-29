@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube } from "lucide
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black w-full text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Logo and Social Media Row */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-6 pb-2 border-b border-white/20">
@@ -148,8 +148,10 @@ export function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-white/20 pt-8">
-          <p className="text-center text-sm text-gray-400">© 2025 MMGurukkals Ayurvedic Clinic. All rights reserved.</p>
+        <div className="border-t text-center border-white/20 pt-8">
+            © {new Date().getFullYear()} MMGurukkals Ayurvedic Clinic. All rights reserved.  
+Website by <a href="https://corpaia.com" target="_blank" rel="noopener noreferrer">CORPAIA</a>.
+
         </div>
       </div>
     </footer>
