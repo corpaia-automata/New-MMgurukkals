@@ -10,8 +10,8 @@ const services = [
     subtitle: "Traditional Healing & Pain Relief",
     description:
       "Traditional Kalari-based therapy that relieves pain, heals injuries, and restores body strength through precise Marma point treatment.",
-    image: "/kalari.webp",
-    url: "/services", // Update this when you create a dedicated Kalari page
+    image: "/treatments/kalari.jpg",
+    url: "/kalari-marma", // Update this when you create a dedicated Kalari page
   },
   {
     title: "Prasava Raksha",
@@ -88,7 +88,7 @@ export default function ServicesSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-24 bg-white">
+    <section ref={sectionRef} className=" bg-white">
       {/* Section Header */}
       <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16">
         <div

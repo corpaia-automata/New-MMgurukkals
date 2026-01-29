@@ -87,7 +87,7 @@ export function Footer() {
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-white" />
                 <a href="tel:+91 73063 93768" className="hover:text-white transition-colors">
-                  +91 7012525067
+                  +91 7356493768
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -105,7 +105,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-2">
                 <MapPin size={20} className="mt-0.5 text-white" />
-                <span>Mm Gurukkal Building, Near Medical College Hospital, Vellipparambu, Kozhikode-673008, Kerala</span>
+                <span>Mm Gurukkal Building, opposite Rahmaniya Handicapped School, near E-Max Theatre, Velliparamba, Kozhikode, Kerala 673008</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 text-white" />

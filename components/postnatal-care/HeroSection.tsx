@@ -7,7 +7,7 @@ import { Shield, Heart, Users, CheckCircle } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[500px] md:min-h-[720px] flex items-center justify-center py-12 md:py-20">
+    <section className="relative min-h-[400px] md:min-h-[420px] flex items-center justify-center py-12 md:py-20">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"

@@ -18,7 +18,7 @@ export function HeroSection({ title, subtitle, description, image, useGradient =
 
   return (
     <section
-      className="relative min-h-[500px] md:min-h-[720px] flex items-center justify-center py-12 md:py-20"
+      className="relative min-h-[500px] md:min-h-[520px] flex items-center justify-center py-12 md:py-20"
       style={
         useGradient
           ? {

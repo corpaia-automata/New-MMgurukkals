@@ -18,11 +18,14 @@ import OurFacilities from "@/components/postnatal-care/OurFacilities";
 import ServicesWithImage from "@/components/postnatal-care/ServicesWeOffer";
 import PackageDetails from "@/components/postnatal-care/PackageDetails";
 
+
 export const metadata = {
   title: "Postnatal Care (Prasavaraksha) | MMGurukkals Ayurvedic Clinic",
   description:
     "Complete Ayurvedic postnatal care system designed to restore a mother's strength after childbirth, promote hormonal balance, and support both mother and newborn.",
 };
+
+
 
 export default function PostnatalCarePage() {
   return (

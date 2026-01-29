@@ -10,23 +10,23 @@ const blogs = [
     slug: "prasava-raksha",
     excerpt:
       "Ayurvedic postnatal care for mothers and babies to regain strength, balance hormones, and support natural recovery.",
-    image: "/prasavaBlog.png",
+    image: "/prasavaBlog.webp",
   },
   {
     title: "A Powerful Reset for Body & Mind",
     slug: "premium-ayurvedic-massage",
     excerpt:
       "Rejuvenating full-body massage using herbal oils to relax the mind, detox the body, and refresh your energy.",
-    image: "/kalari-marma.png",
+    image: "/kalari-marma.webp",
   },
   {
     title: "Premium Ayurvedic Massage With Kalari Marma Chikitsa",
     slug: "premium-ayurvedic-massage-with-kalari-marma-chikitsa",
     excerpt:
       "Deep healing therapy combining Premium Ayurvedic Massage with Kalari Marma Chikitsa for pain, stress, and stiffness relief.",
-    image: "/premiumBlog.png",
+    image: "/premiumBlog.webp",
   },
-]
+];
 
 export const metadata = {
   title: "All Blogs | MMGurukkals Ayurvedic Clinic",
@@ -39,7 +39,7 @@ export default function AllBlogsPage() {
       <Navbar />
 
       {/* Page Header */}
-      <section className="py-12 md:py-20 bg-gradient-to-b from-muted to-background">
+      <section className="py-12 md:py-20 bg-gradient-to-b mt-10 from-muted to-background">
         <div className="max-w-[80rem] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-gray-900 leading-tight font-fractul mb-4">

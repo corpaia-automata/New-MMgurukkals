@@ -126,7 +126,7 @@ export default function ContactPage() {
                     href="tel:+917306393768"
                     className="text-gray-900 hover:text-orange-500 transition-colors text-base"
                   >
-                    +91 7012525067, 7356493768
+                    +91 7356493768, 7012525067
                   </a>
                 </div>
               </div>
@@ -305,7 +305,7 @@ export default function ContactPage() {
               <div className="w-full">
                 <div className="w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden border border-gray-200 shadow-sm">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.5!2d75.775!3d11.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDE1JzAwLjAiTiA3NcKwNDYnMzAuMCJF!5e0!3m2!1sen!2sin!4v1234567890&q=Mm+Gurukkal+Building,+Near+Medical+College+Hospital,+Vellipparambu,+Kozhikode-673008,+Kerala"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0065960085763!2d75.84618739999999!3d11.2609246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65b9b4a1d0575%3A0x7428b807df6c3b20!2sMM%20Gurkkals%20Ayurvedic%2C%20Kalari%20Marmma%20%26%20Postnatal%20care!5e0!3m2!1sen!2sin!4v1769700345403!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -325,7 +325,7 @@ export default function ContactPage() {
               <div className="w-full">
                 <div className="w-full h-[300px] md:h-[400px] rounded-lg overflow-hidden border border-gray-200 shadow-sm">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.5!2d75.775!3d11.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTFCsDE1JzAwLjAiTiA3NcKwNDYnMzAuMCJF!5e0!3m2!1sen!2sin!4v1234567890&q=MM+Gurukkal,+Cheekkode+Road,+Edavannapara,+Kozhikode-673008,+Kerala"
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3913.293723043328!2d75.97832867504867!3d11.239789988938586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDE0JzIzLjIiTiA3NcKwNTgnNTEuMyJF!5e0!3m2!1sen!2sin!4v1769700574018!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
