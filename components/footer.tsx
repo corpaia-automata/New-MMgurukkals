@@ -120,27 +120,27 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-gray-300">
               <li className="flex items-center gap-2">
                 <Clock size={20} className="text-white" />
-                <span>MON: 9:00 AM - 6:00 PM</span> <br /> 
+                <span>MON: 9:00 AM - 9:00 PM</span> <br /> 
               </li>
               <li className="flex items-center gap-2">
                 <Clock size={20} className="text-white" />
-                <span>TUE: 9:00 AM - 6:00 PM</span> <br /> 
+                <span>TUE: 9:00 AM - 9:00 PM</span> <br /> 
               </li>
               <li className="flex items-center gap-2">
                 <Clock size={20} className="text-white" />
-                <span>WED: 9:00 AM - 6:00 PM</span> <br /> 
+                <span>WED: 9:00 AM - 9:00 PM</span> <br /> 
               </li>
               <li className="flex items-center gap-2">
                 <Clock size={20} className="text-white" />
-                <span>THU: 9:00 AM - 6:00 PM</span> <br /> 
+                <span>THU: 9:00 AM - 9:00 PM</span> <br /> 
               </li>
               <li className="flex items-center gap-2">
                 <Clock size={20} className="text-white" />
-                <span>FRI: 9:00 AM - 6:00 PM</span> <br /> 
+                <span>FRI: 9:00 AM - 9:00 PM</span> <br /> 
               </li>
               <li className="flex items-center gap-2">
                 <Clock size={20} className="text-white" />
-                <span>SAT: 9:00 AM - 6:00 PM</span> <br /> 
+                <span>SAT: 9:00 AM - 9:00 PM</span> <br /> 
               </li>
       
             </ul>
