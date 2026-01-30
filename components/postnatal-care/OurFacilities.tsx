@@ -27,9 +27,9 @@ export default function OurFacilities() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
           {/* LEFT IMAGE */}
-          <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden border border-green-500">
+          <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border border-green-500">
             <Image
-              src="/facilities/facility1.jpg"
+              src="/facilities/room.png"
               alt="Post natal care facility"
               fill
               className="object-cover"

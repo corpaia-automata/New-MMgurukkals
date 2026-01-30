@@ -150,8 +150,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="border-t text-center border-white/20 pt-8">
             © {new Date().getFullYear()} MMGurukkals Ayurvedic Clinic. All rights reserved.  
-Website by <a href="https://corpaia.com" target="_blank" rel="noopener noreferrer">CORPAIA</a>.
-
+            Website by <a href="https://corpaia.com" target="_blank" rel="noopener noreferrer">CORPAIA</a>.
         </div>
       </div>
     </footer>
