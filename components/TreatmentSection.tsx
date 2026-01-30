@@ -16,6 +16,10 @@ const treatments = [
   { title: "Bone Setting", image: "/treatments/bone.png" },
   { title: "Traditional Bone Setting", image: "/treatments/tbone.png" },
   { title: "Marma Kizhi", image: "/treatments/marmakizhi.png" },
+  { title: "Kalari Uzhichil", image: "/treatments/uzhichil.png" },
+  { title: "Kalari Marma Herbal Bandage", image: "/treatments/marmaherbal.png" },
+  { title: "Chavitti Uzhichil", image: "/treatments/chavitti.png" },
+  { title: "Kalaripayattu", image: "/treatments/kalaripayattu.png" },
 ];
 
 export default function OurTreatments() {
