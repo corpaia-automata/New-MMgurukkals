@@ -1,26 +1,98 @@
 import Image from "next/image";
 
 const treatments = [
-  { title: "Steam Bath", image: "/treatments/steambath.png" },
-  { title: "Pizhichil", image: "/premiumBlog.webp" },
-  { title: "Shirodhara", image: "/premium.webp" },
-  { title: "Navarakizhi", image: "/treatments/navarakizhi.png" },
-  { title: "Podi Kizhi", image: "/treatments/podikizhi.png" },
-  { title: "Elakizhi", image: "/treatments/elakizhi.png" },
-  { title: "Nasya", image: "/treatments/naysa.png" },
-  { title: "Kati Vasti (For Back Pain)", image: "/treatments/kati.png" },
-  { title: "Janu Basti (For Knee Pain)", image: "/treatments/knee.png" },
-  { title: "Skin & Hair Care", image: "/treatments/hair.png" },
-  { title: "Ultrasound Therapy", image: "/treatments/ultrasound.png" },
-  { title: "TENS Therapy", image: "/treatments/tans.png" },
-  { title: "Bone Setting", image: "/treatments/bone.png" },
-  { title: "Traditional Bone Setting", image: "/treatments/tbone.png" },
-  { title: "Marma Kizhi", image: "/treatments/marmakizhi.png" },
-  { title: "Kalari Uzhichil", image: "/treatments/uzhichil.png" },
-  { title: "Kalari Marma Herbal Bandage", image: "/treatments/marmaherbal.png" },
-  { title: "Chavitti Uzhichil", image: "/treatments/chavitti.png" },
-  { title: "Kalaripayattu", image: "/treatments/kalaripayattu.png" },
+  {
+    title: "Steam Bath",
+    slug: "steam-bath",
+    image: "/treatments/steambath.png",
+  },
+  {
+    title: "Pizhichil",
+    slug: "pizhichil",
+    image: "/premiumBlog.webp",
+  },
+  {
+    title: "Shirodhara",
+    slug: "shirodhara",
+    image: "/premium.webp",
+  },
+  {
+    title: "Navarakizhi",
+    slug: "navarakizhi",
+    image: "/treatments/navarakizhi.png",
+  },
+  {
+    title: "Podi Kizhi",
+    slug: "podi-kizhi",
+    image: "/treatments/podikizhi.png",
+  },
+  {
+    title: "Elakizhi",
+    slug: "elakizhi",
+    image: "/treatments/elakizhi.png",
+  },
+  {
+    title: "Nasya",
+    slug: "nasya",
+    image: "/treatments/naysa.png",
+  },
+  {
+    title: "Janu Basti (For Knee Pain)",
+    slug: "janu-basti",
+    image: "/treatments/knee.png",
+  },
+  {
+    title: "Skin & Hair Care",
+    slug: "skin-and-hair-care",
+    image: "/treatments/hair.png",
+  },
+  {
+    title: "Ultrasound Therapy",
+    slug: "ultrasound-therapy",
+    image: "/treatments/ultrasound.png",
+  },
+  {
+    title: "TENS Therapy",
+    slug: "tens-therapy",
+    image: "/treatments/tans.png",
+  },
+  {
+    title: "Bone Setting",
+    slug: "bone-setting",
+    image: "/treatments/bone.png",
+  },
+  {
+    title: "Traditional Bone Setting",
+    slug: "traditional-bone-setting",
+    image: "/treatments/tbone.png",
+  },
+  {
+    title: "Marma Kizhi",
+    slug: "marma-kizhi",
+    image: "/treatments/marmakizhi.png",
+  },
+  {
+    title: "Kalari Uzhichil",
+    slug: "kalari-uzhichil",
+    image: "/treatments/uzhichil.png",
+  },
+  {
+    title: "Kalari Marma Herbal Bandage",
+    slug: "kalari-marma-herbal-bandage",
+    image: "/treatments/marmaherbal.png",
+  },
+  {
+    title: "Chavitti Uzhichil",
+    slug: "chavitti-uzhichil",
+    image: "/treatments/chavitti.png",
+  },
+  {
+    title: "Kalaripayattu",
+    slug: "kalaripayattu",
+    image: "/treatments/kalaripayattu.png",
+  },
 ];
+
 
 export default function OurTreatments() {
   return (

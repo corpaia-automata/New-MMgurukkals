@@ -24,6 +24,8 @@ import AboutSection from "@/components/AboutSection"
 import BlogSection from "@/components/BlogSection"
 import { StatsSection } from "@/components/StatsSection"
 import { WhatMakesUsDifferent } from "@/components/WhatMakesUsDifferent"
+import OurTreatments from "@/components/TreatmentSection"
+import ServicesCards from "@/components/ServicesCards"
 
 export default function Home() {
   return (
@@ -37,12 +39,15 @@ export default function Home() {
         description="Experience deep healing as Kalarimarma Ayurveda targets vital energy points to relieve pain, restore balance, and strengthen your body."
         image="/home.webp"
       />
-      <StatsSection />
       <AboutSection />
+      <ServicesCards/>
+      <OurTreatments/>
+      <WhyChooseUs/>
+      <StatsSection />
       <WhatMakesUsDifferent />
-      <ServicesSection />
+      {/* <ServicesSection />
       <TreatmentsSection />
-      <WhyChooseUs />
+      <WhyChooseUs /> */}
       {/* <FounderSection /> */}
       <BlogSection />
       <FAQSection />
